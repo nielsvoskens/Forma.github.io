@@ -14,16 +14,22 @@
   </head>
   <body>
     <header class="hero" id="inicio">
+      <div class="hero__lang-switch" role="tablist" aria-label="Cambiar idioma">
+        <button class="hero__lang-btn is-active" type="button" data-lang="es" aria-selected="true">ES</button>
+        <button class="hero__lang-btn" type="button" data-lang="en" aria-selected="false">EN</button>
+      </div>
       <video class="hero__video" autoplay muted loop playsinline poster="">
         <source src="Media/HeroV1.mp4" type="video/mp4" />
       </video>
       <div class="hero__overlay"></div>
 
       <div class="hero__content">
-        <h1>Tu primera vivienda no debería comprarse a ciegas.</h1>
-        <p class="hero__subtitle">Carga el plano y mira la luz a cualquier hora del día, sin dudas.</p>
+        <h1 data-i18n="hero.heading">Tu primera vivienda no debería comprarse a ciegas.</h1>
+        <p class="hero__subtitle" data-i18n="hero.subtitle">
+          Carga el plano y mira la luz a cualquier hora del día, sin dudas.
+        </p>
         <div class="hero__cta">
-          <a class="btn btn-hero" href="#cta">¡Pruébalo ya gratis!</a>
+          <a class="btn btn-hero" href="#cta" data-i18n="hero.cta">¡Pruébalo ya gratis!</a>
         </div>
         <div class="hero__note">
         </div>
@@ -33,43 +39,37 @@
     <main>
       <section class="section value" id="valor">
         <div class="section-heading">
-          <h2>Ilumina tus decisiones con una experiencia inmersiva.</h2>
+          <h2 data-i18n="value.heading">Ilumina tus decisiones con una experiencia inmersiva.</h2>
         </div>
 
         <div class="value__cards">
           <article class="value-card">
             <div class="value-card__icon">☀️</div>
-            <h3><strong>Luz natural real</strong></h3>
-            <p>
-              Descubre cómo entra el sol en tu futuro hogar.
-            </p>
-            <p>
-              Cambia la hora del día, la estación y la
-              ubicación para ver exactamente cuánta luz tendrás en cada habitación.</p>
+            <h3><strong data-i18n="value.card1.title">Luz natural real</strong></h3>
+            <p data-i18n="value.card1.body1">Descubre cómo entra el sol en tu futuro hogar.</p>
+            <p data-i18n="value.card1.body2">
+              Cambia la hora del día, la estación y la ubicación para ver exactamente cuánta luz tendrás en cada
+              habitación.
             </p>
           </article>
 
           <article class="value-card">
             <div class="value-card__icon">🧭</div>
-            <h3><strong>Espacio en 3D</strong></h3>
-            <p>
-              Recorre cada sala como si ya vivieras allí.
-            </p>
-            <p>
-            camina por el piso, abre puertas, mueve
-              paredes y explora todos los detalles de tu futuro hogar en un entorno 3D realista.
+            <h3><strong data-i18n="value.card2.title">Espacio en 3D</strong></h3>
+            <p data-i18n="value.card2.body1">Recorre cada sala como si ya vivieras allí.</p>
+            <p data-i18n="value.card2.body2">
+              Camina por el piso, abre puertas, mueve paredes y explora cada detalle de tu futuro hogar en un
+              entorno 3D realista.
             </p>
           </article>
 
           <article class="value-card">
             <div class="value-card__icon">🗝️</div>
-            <h3><strong>Decisiones con confianza</strong></h3>
-            <p>
-              Toma decisiones informadas y sin dudas.
-            </p>
-            <p>
-              Elige un piso que sabes que encaja contigo porque
-              ya lo has visto, caminado y experimentado antes de comprar.
+            <h3><strong data-i18n="value.card3.title">Decisiones con confianza</strong></h3>
+            <p data-i18n="value.card3.body1">Toma decisiones informadas y sin dudas.</p>
+            <p data-i18n="value.card3.body2">
+              Elige un piso que sabes que encaja contigo porque ya lo has visto, caminado y experimentado antes de
+              comprar.
             </p>
           </article>
         </div>
@@ -82,32 +82,33 @@
       </section>
 
       <section class="section story" id="historia">
-        <h2>Creado por necesidad.</h2>
+        <h2 data-i18n="story.heading">Creado por necesidad.</h2>
         <div class="story__content">
-          <p>
+          <p data-i18n="story.body1">
             Todo empezó cuando fuimos a ver una obra nueva y el promotor simplemente giró un plano y dijo:
             “por aquí sale el sol, por aquí se pone”. Sin vídeos, sin imágenes, solo imaginación.
           </p>
-          <p>
-            Nos pareció absurdo decidir algo tan importante así, así que creamos una aplicación sencilla para
-            ver la luz real de un piso sin saber de 3D.
+          <p data-i18n="story.body2">
+            Nos pareció absurdo decidir algo tan importante así, así que creamos una aplicación sencilla para ver la
+            luz real de un piso sin saber de 3D.
           </p>
-          <p>
-            Es un MVP y sigue en desarrollo. La compartimos gratis porque queremos mejorarla con feedback real
-            y construir algo que de verdad ayude a la gente a decidir mejor.
+          <p data-i18n="story.body3">
+            Es un MVP y sigue en desarrollo. La compartimos gratis porque queremos mejorarla con feedback real y
+            construir algo que de verdad ayude a la gente a decidir mejor.
           </p>
         </div>
       </section>
 
       <section class="section cta" id="cta">
         <div class="cta__card">
-          <h2>¿Listo para ver tu piso hoy?</h2>
-          <p>Descarga la app y vive la experiencia de tu próximo hogar antes de firmar.</p>
+          <h2 data-i18n="cta.heading">¿Listo para ver tu piso hoy?</h2>
+          <p data-i18n="cta.body">Descarga la app y vive la experiencia de tu próximo hogar antes de firmar.</p>
           <a
             class="btn btn-primary"
             href="https://drive.google.com/drive/folders/1oPyUWmMC-zNlvFAAKX80Wy3Z2eVyYSql?usp=sharing"
             target="_blank"
             rel="noreferrer"
+            data-i18n="cta.button"
           >
             ¡Descárgalo gratis!
           </a>
@@ -116,7 +117,7 @@
     </main>
 
     <footer class="footer">
-      <p>© 2024 Forma. Todos los derechos reservados.</p>
+      <p data-i18n="footer.copy">© 2024 Forma. Todos los derechos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
