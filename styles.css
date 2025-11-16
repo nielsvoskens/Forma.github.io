@@ -197,12 +197,12 @@ main {
 }
 
 .story-video {
+  width: min(1200px, 100% - 2.5rem);
   margin: 4rem auto;
   border-radius: 28px;
   overflow: hidden;
   border: 1px solid var(--stroke);
   box-shadow: var(--shadow);
-  max-width: min(1200px, 100% - 2.5rem);
 }
 
 .story-video__media {
